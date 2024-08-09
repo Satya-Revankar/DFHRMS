@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="10dp">
+            <solid android:color="#ffffff"/>
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/calendar"
+        android:bottom="10dp"
+        android:left="120dp"
+        android:right="10dp"
+        android:top="10dp"/>
+</layer-list>

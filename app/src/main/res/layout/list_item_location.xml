@@ -1,0 +1,142 @@
+<!-- list_item_location.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_latitude1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#170F0D"
+            android:text="Latitude    :"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_longitude1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#170F0D"
+        android:text="Longitude :"
+        android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_longitude"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_radius1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#170F0D"
+            android:text="Radius       :"/>
+
+        <TextView
+            android:id="@+id/text_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_sl"
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textColor="#170F0D"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_location_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Location    : "
+            android:textColor="#170F0D"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_location_name"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/text_i"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_action_i">
+
+
+
+
+        </ImageView>
+       <!--  <TextView
+            android:id="@+id/text_I"
+            android:layout_width="33dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="-18dp"
+            android:text="i"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#1B57B1"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:cornerRadius="25dp"/>-->
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

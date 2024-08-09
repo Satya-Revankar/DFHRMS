@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">DFHRMS</string>
+
+
+    <string name="Version">Version 5.1</string>
+    <string name="action_settings">logout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="swipe"> &lt;--swipe--&gt;</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Leave</item>
+        <item>Onduty</item>
+        <item>Onduty History</item>
+        <item>Mark Attendance</item>
+        <item>View Attendance</item>
+        <item>RHoliday</item>
+        <item>Comp-Off</item>
+        <item>Comp-Off History</item>
+        <item>Holiday List</item>
+        <item>Policy</item>
+        <item>Logout</item>
+        <item>HR Policies</item>
+        <item>Announcement</item>
+        <item>What\'s Hot</item>
+    </string-array>
+    <string-array name="nav_drawer_items_else">
+        <item>Leave</item>
+        <item>Onduty</item>
+        <item>Onduty History</item>
+        <item>View Attendance</item>
+        <item>RHoliday</item>
+        <item>Holiday List</item>
+        <item>Policy</item>
+        <item>Logout</item>
+        <item>HR Policies</item>
+        <item>Announcement</item>
+        <item>What\'s Hot</item>
+    </string-array>
+    <string-array name="admin_drawer_items">
+        <item>Leave</item>
+        <item>SelfService</item>
+        <item>logout</item>
+        <item>HR Policies</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <!--<item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>-->
+
+
+       <!-- <item>@drawable/ic_homes</item>
+        <item>@drawable/ic_ondutyss</item>
+        <item>@drawable/ic_ondutyreportss</item>
+        <item>@drawable/ic_viewattandence</item>
+        <item>@drawable/ic_markattandence</item>
+        <item>@drawable/ic_restrictedholiday</item>
+        <item>@drawable/ic_compoffapply</item>
+        <item>@drawable/ic_compoffhistory</item>
+        <item>@drawable/holidaylist</item>
+        <item>@drawable/policy_df</item>
+        <item>@drawable/ic_logouts</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>-->
+
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+
+    <string name="title_activity_main">LEAD Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From LEAD Server: successfully added device!</string>
+    <string name="server_unregistered">From LEAD Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_url">https://dfhrms.dfindia.org/PMSservice.asmx?WSDL</string>
+
+    <string name="description_markattendance1">The attendance is considered for staff 1st used Device only. If any staff logging in from different device, the attendance will not be considered.</string>
+    <string name="description_markattendance">This Tool Tracks your Device and GPS Location</string>
+
+    <string name="caution_note">Note: Only to that location wherein biometrice device has not been installed</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="alert"><font fgcolor='#FFFF3B30'>Alert!</font></string>
+
+</resources>

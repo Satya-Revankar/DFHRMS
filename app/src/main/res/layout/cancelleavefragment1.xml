@@ -1,0 +1,455 @@
+<!--<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>-->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    fab:context="com.dfhrms.Fragment.CancelLeaveFragments1"
+    >
+    <!--fab:context="com.hrms.CancelLeaveFragments1"-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/leave_request1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/leaverequest1"
+            android:text="Leave Request"
+            android:textColor="#FFFFFF" />
+
+<!-- android:layout_marginTop="29dp"-->
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/layoutview"
+            android:background="#009688"
+            android:layout_below="@+id/leave_request1">
+
+
+        <TextView
+            android:id="@+id/view_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Details"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"/>
+
+            <ImageButton
+                android:id="@+id/downarrow_IB"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+
+            <ImageButton
+                android:id="@+id/uparrow_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/ic_arrow_drop_up_black_24dp"
+                />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/layoutview2"
+            android:background="#009688"
+            android:layout_below="@+id/leave_request1">
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/view_BT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Details"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:background="#009688"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/up_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/ic_arrow_drop_up_black_24dp"/>
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/leavedetails_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutview"
+            android:orientation="vertical">
+
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+
+                >
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textSize="10dp"
+                    android:text="Leave Type"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textSize="12dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="CF"
+                    android:textSize="12dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="AL"
+                    android:textSize="12dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="Balance"
+                    android:textSize="12dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+
+                >
+
+                <Button
+                    android:id="@+id/leavetype1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:text=" "
+                    android:textColor="#ffffff"
+
+                    />
+
+                <Button
+                    android:id="@+id/cl_balance_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+                <Button
+                    android:id="@+id/cl_cf_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+                <Button
+                    android:id="@+id/cl_al_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/cl_total_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#ffffff" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/sl_tablerow_TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/openingbalance_button"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/leavetype2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:text=" "
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/sl_balance_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/sl_cf_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/sl_al_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+                <Button
+                    android:id="@+id/sl_total_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/el_tablerow_TR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/openingbalance_button"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/leavetype3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:text=" "
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/el_balance_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/el_cf_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    />
+                <Button
+                    android:id="@+id/el_al_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    />
+                <Button
+                    android:id="@+id/el_total_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow_TR4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/openingbalance_button"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/leavetype4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text=" "
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/total_balance_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+                <Button
+                    android:id="@+id/total_cf_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+
+                <Button
+                    android:id="@+id/total_al_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+                <Button
+                    android:id="@+id/total_total_BT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/openingbalance_button"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+            </TableRow>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/customlistview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    </ListView>
+
+
+
+</LinearLayout>
+

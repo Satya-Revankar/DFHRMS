@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#FFFFFF"
+   
+   > 
+
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+   
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" >
+
+        <LinearLayout
+            android:id="@+id/layout11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginRight="10dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/Leave_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Type"
+                android:paddingRight="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#00635a"/>
+
+            <LinearLayout
+                android:id="@+id/layout12"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+
+                android:layout_marginRight="10dp"
+                >
+
+                <!--android:layout_height="26dp"-->
+               <!-- <kankan.wheel.widget.WheelView
+                    android:id="@+id/LeaveType"
+                    android:layout_height="46dp"
+                    android:layout_width="172dp"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"   />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scroll ↓ ↑"
+                    android:textSize="16dp"
+                    android:textColor="#00635a"
+                    android:visibility="gone"/>
+                <Spinner
+                    android:id="@+id/sp_leavtype"
+                    android:layout_marginLeft="10dp"
+                    style="@style/holoSpinner"
+                    android:spinnerMode="dropdown"
+                    android:dropDownVerticalOffset="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+               android:id="@+id/tableRow1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                >
+             
+    
+        
+         <TextView
+            android:id="@+id/From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:text="From"
+           android:paddingRight="60dp"
+             android:layout_marginLeft="10dp"
+            android:textSize="16dp" 
+            android:textColor="#00635a"/>
+
+    
+    <LinearLayout 
+        android:id="@+id/layout1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        
+        android:layout_marginLeft="20dp"
+       >
+      
+        <!--<kankan.wheel.widget.WheelView
+            android:id="@+id/day1"
+            android:layout_height="26dp"
+            android:layout_width="46dp"
+            android:textSize="16dp"
+            android:visibility="gone"
+            />
+        <kankan.wheel.widget.WheelView android:id="@+id/month1"
+            android:layout_height="26dp"
+            android:layout_width="80dp"
+            android:visibility="gone"/>
+        <kankan.wheel.widget.WheelView android:id="@+id/year1"
+            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/clickfromdate_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Click for Calendar"
+            android:textSize="14dp"
+
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="#c51162"
+            />
+
+
+    </LinearLayout>
+      </TableRow>
+      
+     
+       <TableRow
+               android:id="@+id/tableRow8"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="30dp"
+                >
+             
+     
+         <TextView
+            android:id="@+id/To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:text="To"
+             android:paddingRight="80dp"
+             android:layout_marginLeft="10dp"
+            android:textSize="16dp" 
+            android:textColor="#00635a"/>
+         
+      
+     
+     <LinearLayout 
+        android:id="@+id/layout2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       
+        android:layout_gravity="right"
+        
+        android:layout_marginLeft="20dp"
+       >
+      
+      <!--  <kankan.wheel.widget.WheelView android:id="@+id/day2"
+            android:layout_height="26dp"
+            android:layout_width="46dp"
+            android:visibility="gone"/>
+        <kankan.wheel.widget.WheelView android:id="@+id/month2"
+            android:layout_height="26dp"
+            android:layout_width="80dp"
+            android:visibility="gone"/>
+        <kankan.wheel.widget.WheelView android:id="@+id/year2"
+            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:visibility="gone"/>
+-->
+
+         <TextView
+             android:id="@+id/clicktodate_TV"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textSize="14dp"
+             android:text="Click for Calendar"
+
+             android:gravity="center"
+             android:layout_weight="1"
+             android:textColor="#c51162"
+             />
+
+
+
+
+             </LinearLayout>
+           <TextView
+               android:id="@+id/paternityerror_TV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="0.1dp"
+               android:text=""
+               android:focusable="true"
+               android:focusableInTouchMode="true"
+               android:visibility="visible"
+               android:layout_weight="1"
+               android:textColor="#c51162"
+               />
+
+
+
+       </TableRow>
+    <TextView
+        android:id="@+id/reasonfortodate_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        android:paddingRight="80dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#00635a"/>
+
+     
+        <TableRow
+               android:id="@+id/tableRow2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:scaleType="fitXY" >
+
+     <LinearLayout 
+        android:id="@+id/layout8"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        
+        android:layout_marginRight="10dp"
+        android:paddingTop="34dp">
+
+         <TextView
+            android:id="@+id/Leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:text="Duration"
+            android:paddingRight="34dp"
+             android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+             android:layout_gravity="center"
+            android:textColor="#00635a"/>
+          <LinearLayout 
+        android:id="@+id/layout120"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        
+        android:layout_marginRight="10dp"
+       >
+      
+         
+       <!-- <kankan.wheel.widget.WheelView
+            android:id="@+id/month3"
+            android:layout_height="46dp"
+            android:layout_width="172dp"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"/>-->
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Scroll ↓ ↑"
+                  android:textSize="16dp"
+                  android:visibility="gone"
+                  android:textColor="#00635a"/>
+              <Spinner
+                  android:id="@+id/sp_duration"
+                  android:layout_marginLeft="10dp"
+                  style="@style/holoSpinner"
+                  android:spinnerMode="dropdown"
+                  android:dropDownVerticalOffset="30dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  />
+
+                
+    </LinearLayout>
+         
+        </LinearLayout> 
+     
+      </TableRow> 
+    
+
+     
+
+
+    <TableRow
+        android:id="@+id/tableRow412"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" >
+
+        <LinearLayout
+            android:id="@+id/layout11111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/inchargedetail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="31dp"
+                android:text="Incharge"
+                android:textColor="#00635a"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layout51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.17" >
+
+                <TableRow
+                    android:id="@+id/tableRow51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY" >
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shap"
+                        android:layout_marginLeft="20dp"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" >
+
+        <LinearLayout
+            android:id="@+id/layout111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/incharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="31dp"
+                android:text="Task Detail"
+                android:textColor="#00635a"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layout55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.17" >
+
+                <TableRow
+                    android:id="@+id/tableRow55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitXY" >
+
+                    <EditText
+                        android:id="@+id/taskdetails_ET"
+                        android:layout_width="162dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Task Details"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        android:background="@drawable/shap"
+                        />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" >
+
+        <LinearLayout
+            android:id="@+id/layout1111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:paddingTop="30dp" >
+
+            <TextView
+                android:id="@+id/Leave_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="31dp"
+                android:text="Alternate"
+                android:textColor="#00635a"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.17" >
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY" >
+
+                    <EditText
+                        android:id="@+id/code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:inputType="number"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:enabled="false"
+                        />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:hint="9801133333"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:background="@drawable/shap"
+                        />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableRow>
+    <TextView
+            android:id="@+id/textReson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="left"
+            android:text="Reason"
+           android:layout_marginLeft="10dp"
+           android:paddingTop="20dp"
+            android:textSize="16dp" 
+            android:textColor="#00635a"/>
+
+      <EditText
+          android:id="@+id/leavereason_ET"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:ems="10"
+           android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+          android:inputType="textMultiLine"
+          android:textColor="#000000"
+           android:background="@drawable/shap" >
+
+          <requestFocus />
+      </EditText>
+
+      <Button
+           android:id="@+id/submit"
+           android:layout_width="100dp"
+           android:layout_height="30dp"
+          
+           android:layout_marginTop="29dp"
+          
+             android:layout_gravity="right"
+             android:layout_marginRight="10dp"
+             android:textColor="#FFFFFF"
+             android:text="Submit"
+             android:textSize="16dp"
+             android:gravity="center" 
+              android:background="@drawable/c"
+            />
+       <!--  android:background="#00635a" -->
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text=""
+        android:paddingTop="1dp"/>
+        
+</LinearLayout>
+</ScrollView>

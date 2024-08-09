@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_selector">
+    
+    <LinearLayout 
+    android:id="@+id/LinearLayout02" 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/locationdialog_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp" 
+        />
+    <TextView 
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Kindly Enable the Location/GPS, Go to Settings"
+                android:textColor="#276ca4" 
+                android:paddingLeft="5dp"
+               />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/settingdialog_BT"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/radiogroup"
+        android:layout_below="@+id/radiogroup"
+        android:textSize="14sp"
+        android:background="@drawable/buttonshapes"
+        android:textColor="#fff"
+        android:text="Settings"/>
+    
+    
+</LinearLayout>

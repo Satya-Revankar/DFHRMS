@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SearchViewStyle" />
+
+    <TextView
+        android:id="@+id/topic_not_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Topic not Selected"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+    </TextView>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:choiceMode="multipleChoice" />
+
+   <!-- <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="OK" />
+-->
+</RelativeLayout>

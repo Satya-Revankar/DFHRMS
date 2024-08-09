@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+
+
+<!--ADDED by shivaleela on aug 16th to resolve google login issue in Pie version also added in manifest file-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<network-security-config>-->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">http://mis.detedu.org:8089/SIVService.asmx?op=ValidateGoogleLogin</domain>-->
+    <!--</domain-config>-->
+<!--</network-security-config>-->

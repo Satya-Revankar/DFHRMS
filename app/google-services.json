@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616080241440",
+    "firebase_url": "https://dfhrms-8a9b6.firebaseio.com",
+    "project_id": "dfhrms-8a9b6",
+    "storage_bucket": "dfhrms-8a9b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616080241440:android:81e89283807eac98d35d45",
+        "android_client_info": {
+          "package_name": "com.dfhrms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616080241440-immv3ajq4985but3l6f0h4cj5r6khk6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "",
+            "certificate_hash": "71312cca3686347dc94e545dba7464dde9a0e21a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5mnuju"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="College Name"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/view_studentattendance_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/info"
+            android:layout_marginTop="5dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/college_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default College Name"
+        android:textStyle="bold">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Mode : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <TextView
+            android:id="@+id/classMode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Default mode">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <TextView
+            android:id="@+id/semester_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Default Semester">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <TextView
+            android:id="@+id/subject_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Default subject"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic Name : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <TextView
+            android:id="@+id/topic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Default Topic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Id : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+
+        <TextView
+            android:id="@+id/mainId_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Default main Id"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classNotTaken_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/classNotTaken_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Taken Reason : "
+            android:textColor="@color/greenTextcolor">
+
+        </TextView>
+        <TextView
+            android:id="@+id/classNotTaken_reason_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/classstart_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Start Time : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/classStartTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:00:00 PM">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/classend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class End Time : "
+            android:textColor="@color/greenTextcolor">
+
+        </TextView>
+        <TextView
+            android:id="@+id/classEndTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:00:00 PM">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/attendanceStart_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Start Time : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/attendanceStartTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:00:00 PM">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/attendanceEnd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance End Time : "
+            android:textColor="@color/greenTextcolor">
+
+        </TextView>
+        <TextView
+            android:id="@+id/attendanceEndTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="00:00:00 PM">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Students : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/total_students_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/present_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present Students : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/present_students_tv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="0">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/absent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent Students : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/absent_students_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/imgupdated_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Updated : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/imgupdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/head_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head Count : "
+            android:textColor="@color/greenTextcolor">
+        </TextView>
+        <TextView
+            android:id="@+id/head_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="0">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/head_count_img"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/imageurl"/>
+
+            <ImageView
+                android:id="@+id/headcount_camera"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image_upload"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#23000000"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

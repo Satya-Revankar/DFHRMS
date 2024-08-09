@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/date">
+
+        <Spinner
+            android:id="@+id/popup_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/popup_edit_text"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter text" />
+
+
+
+    <!-- Add any other UI elements you need for your popup -->
+
+</LinearLayout>

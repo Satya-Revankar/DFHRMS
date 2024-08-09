@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <TextView
+        android:id="@+id/completeclass_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Are you sure you want to complete the class?">
+    </TextView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/reason_ll">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:text="Reason for completing the class Early">
+        </TextView>
+    <EditText
+        android:id="@+id/reason2hrLess_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:hint="Reason"
+        android:inputType="text"
+        android:maxLength="500"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ,.">
+    </EditText>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <!--<Button
+            android:id="@+id/closeDialogButton"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="No"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/greenTextcolor"
+            android:background="@drawable/round_corner"
+            android:layout_marginBottom="20dp" />
+        <Button
+            android:id="@+id/completeClass_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="Yes"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/greenTextcolor"
+            android:background="@drawable/round_corner"
+            android:layout_marginBottom="20dp" />-->
+    </LinearLayout>
+
+</LinearLayout>

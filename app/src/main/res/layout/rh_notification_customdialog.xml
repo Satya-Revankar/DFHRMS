@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+
+    >
+
+    <TextView
+        android:id="@+id/rh_notification_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greenTextcolor"
+
+        >
+
+
+    </TextView>
+    <TableRow
+        android:id="@+id/ondutytableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/rh_notification_ET"
+        >
+
+        <Button
+            android:id="@+id/rh_later_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".33"
+            android:textColor="#FFFFFF"
+            android:text="Later"
+            android:textSize="12sp"
+            android:background="@color/greenTextcolor"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:id="@+id/rh_approve_BT"
+            android:textColor="#FFFFFF"
+            android:background="@color/greenTextcolor"
+            android:textSize="12sp"
+            android:layout_weight=".33"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greenTextcolor"
+            android:layout_weight=".1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:id="@+id/rh_reject_BT"
+            android:layout_weight=".33"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@color/greenTextcolor" />
+    </TableRow>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>-->

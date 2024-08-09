@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subjectwise Student Attendance"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/update_student_list_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/reload"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/close_attendance_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/closedialog2"
+            android:layout_margin="10dp">
+        </ImageView>
+
+    </LinearLayout>
+
+
+            <ListView
+                android:layout_marginTop="50dp"
+                android:id="@+id/student_attendance_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+</RelativeLayout>

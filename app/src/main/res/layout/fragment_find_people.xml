@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- <TextView
+     android:id="@+id/txtLabel"
+      android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:textSize="16dp"
+     android:text="Home View"/>
+
+ <ImageView android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/txtLabel"
+     android:src="@drawable/ic_home"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="10dp"/>
+      --> <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    fab:context="com.dfhrms.Fragment.FindPeopleFragment"
+    >
+   <!-- fab:context="com.hrms.FindPeopleFragment"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <!-- android:background="@drawable/bluebutton" -->
+
+
+            <!--
+               <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:src="@drawable/loginwithfb" />
+            -->
+
+            <Button
+                android:id="@+id/leave_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/leaverequest1"
+                android:text="Leave Request"
+                android:textColor="#FFFFFF"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leave_request"
+
+                android:layout_marginTop="29dp"
+
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tableRow123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    
+
+                    >
+
+                    <Button
+                        android:id="@+id/opening_balance1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+
+                        android:gravity="left|center"
+
+                        android:text="    Opening Balance"
+                        android:textColor="#ffffff"
+
+                        />
+
+                    <Button
+                        android:id="@+id/opening_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="right|center"
+
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY">
+
+                    <Button
+                        android:id="@+id/Brought_Forword1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="left|center"
+                        android:text="   Brought Forward"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/Brought_Forword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="right|center"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY">
+
+                    <Button
+                        android:id="@+id/avil_leave1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="left|center"
+                        android:text="    Availed Leave"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/avil_leave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="right|center"
+                        android:textColor="#ffffff"
+
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow211"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY">
+
+                    <Button
+                        android:id="@+id/close_leave1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="left|center"
+                        android:text="    Balance"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/close_leave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="right|center"
+                        android:textColor="#ffffff"
+
+
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/cancelleave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY">
+
+                    <Button
+                        android:id="@+id/CancelLeave_BT1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="left|center"
+                        android:text="    Cancel Leave"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/CancelLeave_BT2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/openingbalance_button"
+                        android:gravity="right|center"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/table1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Leave Details"
+                android:textColor="#00635a"
+                android:textSize="26dp" />
+
+            <TableLayout
+                android:id="@+id/table22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Detail"
+                android:background="#01b8a7"
+
+                android:stretchColumns="*"></TableLayout>
+
+
+            <!--       <TableLayout
+                      android:id="@+id/table22"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:layout_below="@+id/Detail"
+                       android:background="#01b8a7"
+                       android:layout_marginTop="46dp" >
+
+                       <TableRow
+                           android:id="@+id/tableRow11"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                            >
+
+                          <Button
+                       android:id="@+id/opening_balance1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="#027083"
+                         android:textColor="#ffffff"
+                       android:text="Opening Balance"
+                        />
+                       </TableRow>
+
+                       <TableRow
+                           android:id="@+id/tableRow212"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                           android:scaleType="fitXY" >
+
+                           <Button
+                       android:id="@+id/avil_leave1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="#004b54"
+                         android:textColor="#ffffff"
+                       android:text="Availed Leave"
+                        />
+                       </TableRow>
+
+                       <TableRow
+                           android:id="@+id/tableRow21"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                       android:layout_marginLeft="10dp"
+                           android:scaleType="fitXY" >
+
+                         <Button
+                       android:id="@+id/close_leave1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="#ffffff"
+                         android:textColor="#ffffff"
+                       android:text="close balanse"
+                        />
+                       </TableRow>
+
+
+                   </TableLayout> -->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

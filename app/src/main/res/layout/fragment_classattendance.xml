@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <!--<TextView
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Class Scheduled"
+        android:textSize="15dp"
+        android:textColor="@color/greenTextcolor"
+
+        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ver_Colour_iv_mca"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/verblink_tv_mca"
+            android:typeface="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/Version"
+            android:textColor="#030900"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textSize="17dp"
+            android:textColor="@color/greenTextcolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/clickfromdate_TV"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:textColor="@color/black"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:textSize="17dp"
+            android:focusableInTouchMode="false"
+            android:hint="dd-mm-yyyy"
+            android:textAllCaps="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp" />
+        <ImageView
+            android:id="@+id/view_attendance_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/info"
+            android:layout_marginTop="5dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/get_location_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/get_location"
+            android:layout_marginTop="5dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/refresh_screen_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/refresh_full"
+            android:layout_marginTop="5dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/bluetooth"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bluetooth"
+            android:layout_marginTop="5dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/imageUpload_iv"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/image_upload"
+            android:layout_marginTop="5dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College    :   "
+            android:textSize="17dp"
+            android:textColor="@color/greenTextcolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp">
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/college_name_spinner"
+                android:layout_width="240dp"
+                android:background="@null"
+                android:layout_height="30dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </androidx.cardview.widget.CardView>
+        <!--<Spinner
+            android:id="@+id/college_name_spinner"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:overlapAnchor="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rounded_corners2" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode       :   "
+            android:textSize="17dp"
+            android:textColor="@color/greenTextcolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp">
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/mode_of_class_spinner"
+                android:layout_width="240dp"
+                android:background="@null"
+                android:layout_height="30dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/greenTextcolor"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="Cohort     :   "/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/cohort_Spinner"
+                android:layout_width="240dp"
+                android:background="@null"
+                android:layout_height="30dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </androidx.cardview.widget.CardView>
+        <!--<Spinner
+            android:id="@+id/cohort_Spinner"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:overlapAnchor="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rounded_corners2" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/greenTextcolor"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="Subject    :   "/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/subject_spinner"
+                android:layout_width="240dp"
+                android:background="@null"
+                android:layout_height="30dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </androidx.cardview.widget.CardView>
+        <!--<Spinner
+            android:id="@+id/subject_spinner"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:overlapAnchor="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rounded_corners2" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/greenTextcolor"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="Topic        :   "/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/Topic_Spinner"
+                android:layout_width="240dp"
+                android:background="@null"
+                android:layout_height="30dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/greenTextcolor"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="SubTopic :  "/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/selectedValuesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selected Values"
+                android:textColor="@color/black"
+                android:inputType="none"
+                android:enabled="true"
+                android:focusable="true"
+                android:clickable="true"
+                android:maxLines="4"/>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/classtaken_ll"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/classstarted_bt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shap"
+            android:enabled="false"
+            android:text=" Class Started"
+            android:textColor="@color/light_gray"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/start_attendance_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Start Attendance"
+            android:layout_margin="10dp"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:background="@drawable/shap"
+            android:textColor="@color/light_gray"
+            android:textSize="14dp" />
+
+        <Button
+
+            android:id="@+id/classscompleted_bt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Class Completed"
+            android:layout_weight="1"
+            android:background="@drawable/shap"
+            android:enabled="false"
+            android:textColor="@color/light_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/classNottaken_ll"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/classNotTaken_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/shap"
+            android:text="Not taken"
+            android:textColor="@color/light_gray"
+            android:textSize="17dp" />
+    </LinearLayout>
+    <!-- <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Key"
+             android:textSize="20dp"
+             android:layout_marginRight="30dp"
+             android:textStyle="bold">
+         </TextView>
+     </LinearLayout>-->
+    <TextView
+        android:id="@+id/previous_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance not captured, Cannot capture previous date Attendance"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/out_of_location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You are out of location"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorred"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/class_not_completed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press Class Completed to Proceed for Next Class Attendance"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorred"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/pressBack_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont close the app until the attendance process completes"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorred"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/student_not_assigned_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Students for this cohort are not assigned"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorred"
+        android:visibility="gone">
+    </TextView>
+    <TextView
+        android:id="@+id/location_not_set_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please set the location"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorred"
+        android:visibility="gone">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/attendance_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/summaryHeading_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Summary"
+                    android:textStyle="bold"></TextView>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textSize="15dp"
+                        android:textColor="@color/greenTextcolor"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Present"
+                        android:textSize="15dp"
+                        android:textColor="@color/greenTextcolor"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Absent"
+                        android:textSize="15dp"
+                        android:textColor="@color/greenTextcolor"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="5dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp">
+
+                    <TextView
+                        android:id="@+id/total_count_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="end"/>
+                    <TextView
+                        android:id="@+id/present_count_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="end"/>
+                    <TextView
+                        android:id="@+id/absent_count_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="end"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp">
+                    <!--
+                                    <TextView
+                                        android:id="@+id/total_percent_tv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="100 %"
+                                        android:textSize="15dp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="end"/>-->
+                    <TextView
+                        android:id="@+id/present_percent_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="end"/>
+                    <TextView
+                        android:id="@+id/absent_percent_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="end"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/secret_key_cv"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secret Pin"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/secret_key_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="00000"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/timer_count_tv"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:text="00:00"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="40dp"
+                    android:textColor="#FF0000"
+                    android:textStyle="italic"/>
+            </RelativeLayout>
+            <!--  <Button
+                  android:id="@+id/view_attendance_btn"
+                  android:layout_width="110dp"
+                  android:layout_height="55dp"
+                  android:text="View Attendance"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginLeft="5dp"
+                  android:background="@drawable/button_change"
+                  android:textColor="@color/light_gray"
+                  android:textSize="14dp" />-->
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat : "
+                android:textSize="20sp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/latitude_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long : "
+                android:textSize="20sp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/longitude_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/row1_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="-10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="2dp"
+                android:text="Student List"
+                android:layout_marginStart="40dp"
+                android:textColor="#5C5757"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Refresh_iv"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/reload"
+                android:layout_gravity="end|center_vertical">
+            </ImageView>
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listView_lv"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:layout_marginTop="-5dp"
+            android:dividerHeight="5dp"/>/>
+    </LinearLayout>
+</LinearLayout>

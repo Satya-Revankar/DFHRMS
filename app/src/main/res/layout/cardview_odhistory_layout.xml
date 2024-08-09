@@ -1,0 +1,376 @@
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="2dp"
+    card_view:cardCornerRadius=".1dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@drawable/openingbalance_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3.2"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="1dp"
+                        android:text="Location"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_locationlabel_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="1dp"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="1dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_location_TV"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Days"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_dayslabel_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_noofdays_TV"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cardview_fromdate_label_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="FromDate"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/cardview_fromdate_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="44dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="ToDate"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_todate_label_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_todate_TV"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="49dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="Status"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_status_label_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        android:id="@+id/cardview_status_TV"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="ApprovedOn"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_approved_label_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_approved_TV"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="Type Of OD"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_typeofod_label_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=" : "
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_typeofod_TV"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:text="Reason:"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_reason_label_TV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="35dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/cardview_reason_TV"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </FrameLayout>
+
+           <!-- </LinearLayout>-->
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_weight="0.8"
+            android:gravity="center|right"
+            android:visibility="visible"
+            android:id="@+id/layoutapply"
+            android:orientation="horizontal"
+            >
+
+
+
+            <Button
+                android:id="@+id/rh_apply_BT"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:theme="@style/MyButton"
+                android:text="Apply Now"
+                android:textColor="#FFF"
+                android:visibility="visible"/>
+
+            &lt;!&ndash;android:theme="@style/MyButton"&ndash;&gt;
+        </LinearLayout>
+-->
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
